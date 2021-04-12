@@ -40,13 +40,6 @@ header h1 {
     font-size: 3em;
 }
 
-ul li,
-a {
-    list-style-type: none;
-    text-align: left;
-    text-decoration: none;
-    padding: 7px;
-}
 
 .page_link {
     margin: 18px 0;
@@ -57,16 +50,15 @@ a {
 .active_page_link {
     border-bottom: 1px solid black;
     color: black !important;
-}
-
-.social_media {
-    display: flex;
-}
-
-.social_media li {
-    padding-top: 30px; 
-    align-items: center;
 } */
+
+ul li,
+a {
+    list-style-type: none;
+    text-align: left;
+    text-decoration: none;
+    /* padding: 7px; */
+}
 
 .brand {
     font-size: 2.2em;
@@ -77,7 +69,7 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 38px;
-    font-family: 'Merriweather', 'Roboto', 'Open Sans', 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', 'Roboto', 'Open Sans', 'Montserrat', sans-serif;
 }
 
 .right-side {
@@ -123,7 +115,6 @@ a {
 
 main {
     float: left;
-    /* background: url(img/black_background.jpeg); */
     padding-left: 26px;
 }
 
@@ -182,4 +173,13 @@ article h1 {
     height: 25px;
     width: 25px;
     padding-right: 25px;
+}
+
+.social_media {
+    display: flex;
+}
+
+.social_media li {
+    padding-top: 30px;
+    align-items: center;
 }
