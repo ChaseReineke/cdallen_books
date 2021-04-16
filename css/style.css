@@ -4,8 +4,12 @@
     /* border: 1px dotted red; */
 }
 
-#container {
-    height: 100%;
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 18px 0 18px;
+    box-sizing: border-box;
+    overflow: hidden;
     background: url(img/black_background.jpeg);
     box-shadow: 2px 0 10px rgb(0 0 0 / 50%);
 }
@@ -61,14 +65,14 @@ a {
 }
 
 .brand {
-    font-size: 2.2em;
+    font-size: 2.5em;
     color: #ffffff;
 }
 
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 38px;
+    padding: 13px 13px 39px 13px;
     font-family: 'Playfair Display', 'Roboto', 'Open Sans', 'Montserrat', sans-serif;
 }
 
@@ -86,6 +90,7 @@ a {
     margin: 0 16px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
+    align-self: center;
 }
 
 .active-nav-link {
@@ -110,12 +115,17 @@ a {
     color: #ffffff;
 }
 
+.hamburger-btn {
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+
 
 /*242331*/
 
 main {
     float: left;
-    padding-left: 26px;
 }
 
 .white {
@@ -182,4 +192,40 @@ article h1 {
 .social_media li {
     padding-top: 30px;
     align-items: center;
+}
+
+.arcanus_logo {
+    height: 250px;
+    width: 225px;
+    float: right;
+    padding-right: 25px;
+}
+
+@media only screen and (min-width:1151px) {}
+
+@media only screen and (max-width:1150px) {
+    .nav-wrapper {
+        display: block;
+    }
+    .nav-link-wrapper {
+        margin: 10px 20px 10px 0;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .nav-wrapper {
+        display: block;
+    }
+    .left-side {
+        margin-bottom: 20px;
+    }
+    .right-side {
+        display: block;
+        float: left;
+    }
+    .nav-link-wrapper {
+        display: block;
+        margin: 10px 0;
+        border: none !important;
+    }
 }
