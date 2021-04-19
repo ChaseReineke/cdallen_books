@@ -125,7 +125,7 @@ a {
 /*242331*/
 
 main {
-    float: left;
+    display: block;
 }
 
 .white {
@@ -173,10 +173,11 @@ article h1 {
 }
 
 #footer {
-    height: 65px;
+    height: 95px;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding-top: 20px;
 }
 
 .social_media_img {
@@ -201,6 +202,10 @@ article h1 {
     padding-right: 25px;
 }
 
+.arcanus_logo_bottom {
+    display: none;
+}
+
 @media only screen and (min-width:1151px) {}
 
 @media only screen and (max-width:1150px) {
@@ -221,11 +226,45 @@ article h1 {
     }
     .right-side {
         display: block;
-        float: left;
     }
     .nav-link-wrapper {
         display: block;
         margin: 10px 0;
         border: none !important;
+    }
+    .brand img {
+        height: 42.5px;
+        width: 250px;
+    }
+    .container .main {
+        float: none;
+    }
+    .container #footer {
+        float: none;
+        display: block;
+    }
+    #about_section {
+        display: block;
+    }
+    .arcanus_logo_top {
+        display: none;
+    }
+    .work_section {
+        display: block;
+    }
+    .work_img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .arcanus_logo_bottom {
+        display: flex;
+        height: 200px;
+        width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px 0;
+        float: none;
     }
 }
